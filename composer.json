@@ -1,0 +1,34 @@
+{
+    "name": "insanekitty/b2-cloud-storage-service-provider",
+    "description": "Laravel/Lumen Service Provider for Backblaze B2 Cloud Storage",
+    "license": "MIT",
+    "authors": [{
+        "name": "Megan Davidson",
+        "email": "megan@insanekitty.co.uk"
+    }],
+    "minimum-stability": "dev",
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/meganabigaildavidson/b2-cloud-storage-client.git"
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/meganabigaildavidson/flysystem-b2-cloud-storage.git"
+    }],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "^5.2",
+        "illuminate/contracts": "^5.2",
+        "illuminate/filesystem": "^5.2",
+        "insanekitty/b2-cloud-storage-client": "dev-develop",
+        "insanekitty/flysystem-b2-cloud-storage": "dev-develop"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.6.*",
+        "squizlabs/php_codesniffer": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Insanekitty\\BackblazeB2\\": "src/"
+        }
+    }
+}
